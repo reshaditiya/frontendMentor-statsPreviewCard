@@ -1,95 +1,102 @@
 <!DOCTYPE html>
 <html lang="en" style="font-size: 8px">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
-		<title>Frontend Mentor | Stats preview card component</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
-			rel="stylesheet"
-		/>
-		<script src="https://cdn.tailwindcss.com"></script>
-		<script>
-			tailwind.config = {
-				theme: {
-					extend: {
-						colors: {
-							"dark-blue": "#090b1a",
-							"desturated-blue": "#1b1938",
-							"soft-violet": "#aa5cdb",
-							white: "#ffffff",
-						},
-						fontFamily: {
-							inter: "Inter",
-							"lexend-deca": "Lexend Deca",
-						},
-					},
-				},
-			}
-		</script>
-	</head>
-	<body
-		class="flex justify-center items-center pt-[22rem] bg-dark-blue text-white font-lexend-deca"
-		style="font-size: 15px"
-	>
-		<div
-			class="w-[139rem] flex bg-desturated-blue rounded-[1.5rem] overflow-hidden"
-		>
-			<div class="pl-[9rem] pr-[12rem] pt-[8.8rem] leading-[3rem]">
-				<h1
-					class="text-[4.4rem] font-['Inter'] font-[900] leading-[5.6rem]"
-				>
-					Get <span class="text-soft-violet">insights</span> that help
-					your business grow.
-				</h1>
-				<p class="mt-[3.2rem] opacity-75">
-					Discover the benefits of data analytics and make better
-					decisions regarding revenue, customer experience, and
-					overall efficiency.
-				</p>
-				<div class="mt-[9.4rem] flex gap-[8rem]">
-					<div class="flex flex-col gap-[1rem] text-[1.7rem]">
-						<span class="text-[3rem] font-[900] font-inter"
-							>10k+</span
-						><span class="opacity-60">COMPANIES</span>
-					</div>
-					<div class="flex flex-col gap-[1rem] text-[1.7rem]">
-						<span class="text-[3rem] font-[900] font-inter"
-							>314</span
-						><span class="opacity-60">TEMPLATES</span>
-					</div>
-					<div class="flex flex-col gap-[1rem] text-[1.7rem]">
-						<span class="text-[3rem] font-[900] font-inter"
-							>12M+</span
-						><span class="opacity-60">QUERIES</span>
-					</div>
-				</div>
-			</div>
-			<div class="relative h-[56rem] w-[160rem]">
-				<img src="images/image-header-desktop.jpg" alt="" />
-				<div class="absolute inset-0 bg-purple-500 bg-opacity-50"></div>
-			</div>
-		</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "dark-blue": "#090b1a",
+              "desturated-blue": "#1b1938",
+              "soft-violet": "#aa5cdb",
+              white: "#ffffff",
+            },
+            fontFamily: {
+              inter: "Inter",
+              "lexend-deca": "Lexend Deca",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="flex flex-col justify-center items-center pt-[22rem] bg-dark-blue text-white font-lexend-deca"
+    style="font-size: 15px"
+  >
+    <div
+      class="w-full md:w-[139rem] flex flex-col-reverse md:flex-row bg-desturated-blue rounded-[1.5rem] overflow-hidden"
+    >
+      <div
+        class="w-full md:min-w-[70rem] flex-grow pl-[9rem] pr-[12rem] pt-[8.8rem] pb-[7.4rem] leading-[3rem]"
+      >
+        <h1
+          class="text-[4.4rem] font-['Inter'] font-[900] leading-[5.6rem] text-center md:text-left"
+        >
+          Get <span class="text-soft-violet">insights</span> that help your
+          business grow.
+        </h1>
+        <p class="mt-[3.2rem] opacity-75 text-center md:text-left">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="mt-[9.4rem] flex flex-col md:flex-row gap-[8rem]">
+          <div
+            class="flex flex-col items-center md:items-start gap-[1rem] text-[1.7rem]"
+          >
+            <span class="text-[3rem] font-[900] font-inter">10k+</span
+            ><span class="opacity-60">COMPANIES</span>
+          </div>
+          <div
+            class="flex flex-col items-center md:items-start gap-[1rem] text-[1.7rem]"
+          >
+            <span class="text-[3rem] font-[900] font-inter">314</span
+            ><span class="opacity-60">TEMPLATES</span>
+          </div>
+          <div
+            class="flex flex-col items-center md:items-start gap-[1rem] text-[1.7rem]"
+          >
+            <span class="text-[3rem] font-[900] font-inter">12M+</span
+            ><span class="opacity-60">QUERIES</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative h-[56rem] md:w-[160rem] bg-center bg-cover"
+        style="background-image: url(images/image-header-desktop.jpg)"
+      >
+        <div class="absolute inset-0 bg-purple-500 bg-opacity-50"></div>
+      </div>
+    </div>
 
-		<!-- <div class="attribution">
+    <!-- <div class="mt-10">
 			Challenge by
 			<a
 				href="https://www.frontendmentor.io?ref=challenge"
 				target="_blank"
+				class="underline"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
+			>. Coded by <a href="https://reshaditiya.com" class="underline">Resha Aditiya</a>.
 		</div> -->
-	</body>
+  </body>
 </html>
